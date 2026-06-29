@@ -1,0 +1,1 @@
+const a=["Embedded Firmware Engineer","Qt/QML Developer","RTOS Developer","IoT Engineer"];let i=0,j=0,d=false,e=document.getElementById("typing");setInterval(()=>{let w=a[i];if(!d){e.textContent=w.slice(0,++j);if(j==w.length)d=true}else{e.textContent=w.slice(0,--j);if(j==0){d=false;i=(i+1)%a.length}}},120);
